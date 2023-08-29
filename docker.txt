@@ -1,0 +1,6 @@
+docker login
+docker logout
+docker push luigicapoia/nestjs-loja:1.0.1
+docker build -t luigicapoia/nestjs-loja:1.0.1 .
+docker images
+docker rmi $(docker image ls -aq) --force
